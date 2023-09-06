@@ -16,16 +16,14 @@
 @media(max-width:600px) {
     .map {
         position: relative;
-        left: 10px;
-        width:1000px;
-        height:100%;
+        left: 3px;
+        width:446px;
+        height:90%;
         display: flex;
     }
     #map {
         display: flex;
         height: 700px;
         width: 500px;
-        position: relative;
-        left: -220px;
     }
 }

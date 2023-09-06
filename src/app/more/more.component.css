@@ -48,21 +48,22 @@ span {
     .more-detail{
         display: flex;
         height:750px;
-        width:1000px;
+        width:430px;
         position: relative;
-        left: 10px;
+        left:5px;
     }
     .more{
         display: flex;
         height: 50px;
         position: relative;
-        left: -200px;
+        left: -30px;
     }
     .more-detail-box{
         display: flex;
-        width: 50%;
+        width: 90%;
         height:95%;
         position: relative;
-        left: -220px;
+        left: -4px;
+
     }
 }

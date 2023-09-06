@@ -44,28 +44,36 @@ a:hover {
         display: grid;
         grid-template-rows: 0.5fr 1fr;
         grid-template-columns: 1fr;
-        overflow: hidden;
-        border: 2px solid red;
     }
     .right-container {
         display: grid;
         grid-template-rows: 0.1fr 1fr;
+        width:460px;
     }
     .route-link {
         display: flex;
         height:0.1fr;
-        width: 58%;
-        background-color:rgba(104, 209, 251, 0.47);
-        justify-content:center;
-        align-items: center;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.081);
+        width: 455px;
+        background-color: rgba(135, 207, 235, 0.818);
     }
     .route-link-align {
         display: flex;
-        width: 95%;
-        gap:10px;
-        font-size: 20px;
+        width: 440px;
+        gap:7px;
+        font-size: 18px;
         font-weight: bold;
         cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    .left-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 450px;
+    }
+    .display-component {
+        display: flex;
+        height: 100%;
+        width: 100%;
     }
 } 

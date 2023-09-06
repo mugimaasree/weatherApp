@@ -10,7 +10,6 @@
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    border: 2px solid;
     position: relative;
     left: 95px;
     top:100px;
@@ -40,5 +39,39 @@
     padding: 5px;
 } 
 @media(max-width:600px){
+    .chart-container {
+        display: flex; 
+        width: 95%;
+        position: relative;
+        left:4px;
+    }
     
+    .chart-bars {
+        display: flex;
+        align-items: flex-end;
+        height: 250px;
+        width: 110%;
+        justify-content: center;
+        gap: 5px;
+
+    }
+    
+    .chart-bar {
+        background-color: blue;
+        width: 30px;
+        color:black;
+    }
+    
+    .chart-day {
+        display: flex;
+        font-size: 10px;
+    }
+    
+    .chart-temp-label {
+        display: flex;
+        font-size: 10px;
+    } 
+    .chart-date{
+        font-size: 10px;
+    }
 }

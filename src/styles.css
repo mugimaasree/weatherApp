@@ -13,6 +13,7 @@ body {
 
 @media(max-width:600px) {
     body {
-        background-color:rgb(213, 213, 250);
+        height: 100%;
+        width: 100%;
     }
 }
