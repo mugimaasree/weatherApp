@@ -8,7 +8,6 @@ body {
     width: 100%;
     background: url(assets/images/pic1.avif) no-repeat;
     background-size: cover;
-    border: 2px solid red; 
     overflow-x: hidden;
 }
 
