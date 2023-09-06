@@ -1,0 +1,31 @@
+.map {
+    position: relative;
+    top:20px;
+    left: 85px;
+    width:1000px;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#map {
+    display: flex;
+    height: 700px;
+    width: 800px;
+}
+@media(max-width:600px) {
+    .map {
+        position: relative;
+        left: 10px;
+        width:1000px;
+        height:100%;
+        display: flex;
+    }
+    #map {
+        display: flex;
+        height: 700px;
+        width: 500px;
+        position: relative;
+        left: -220px;
+    }
+}

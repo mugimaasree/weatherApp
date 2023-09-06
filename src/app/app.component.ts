@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'weather-app';
+  /* isMapVisible=true;
+
+  toggleMapVisibility(){
+    this.isMapVisible=!this.isMapVisible;
+  } */
 }

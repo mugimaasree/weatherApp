@@ -1,0 +1,22 @@
+<div class="right-container">
+    <div class="weather-detail">
+        <div class="input-date">
+            <span class="span"> StartDate : <input type="date" id="start-date" [(ngModel)]="startDate"></span>
+            <span class="span"> EndDate : <input type="date" id="end-date" [(ngModel)]="endDate"></span>
+            <button class="getbutton" (click)="weather()">Get Weather</button>
+        </div>
+        <div class="weather-box"  *ngIf = "temperatureData">
+            <h2>Weather Forecast</h2>
+        <div class="weather-detail-box">
+        <div class="forecast-box"*ngFor="let day of Days; let i = index">
+            <div class="date">{{ day.date }}</div>
+                <div class="temperature">
+                    <div class="tempa"> <span>☀️</span>{{ temperatureData?.hourly.temperature_2m[i] }}°C</div>
+                    <div class="tempa"> <span>💧</span>{{ temperatureData?.hourly.relativehumidity_2m[i] }}%</div>
+                    <div class="tempa"> <span>🌴</span>{{temperatureData?.hourly.windspeed_10m[i]}}km/h</div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

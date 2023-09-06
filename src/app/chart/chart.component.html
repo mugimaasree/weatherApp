@@ -1,0 +1,11 @@
+<div class="chart-container">
+    <div class="chart-bars">
+        <div class="chart-bar-container" *ngFor="let temp of temperatureData; let i = index">
+            <div class="chart-day">{{ getDayOfWeek(temperatureDates[i]) }}</div>
+            <div class="chart-bar" [style.height.px]="temp * 5">
+                <span class="chart-temp-label">{{ temp }}°C</span>
+            </div>
+            <div class="chart-date">{{ getDate(temperatureDates[i]) }}</div>
+        </div>
+    </div>
+</div>
