@@ -136,4 +136,11 @@ export class FourteenWeatherComponent {
       }
     });
   }
+  clearInput(inputField: 'startDate' | 'endDate') {
+    if (inputField === 'startDate') {
+      this.startDate = '';
+    } else if (inputField === 'endDate') {
+      this.endDate = '';
+    }
+  }
 }

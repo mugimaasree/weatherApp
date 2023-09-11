@@ -1,9 +1,9 @@
 <div class="right-container">
     <div class="weather-detail">
         <div class="input-date">
-            <span class="span"> StartDate : <input type="date" id="start-date" [(ngModel)]="startDate"></span>
-            <span class="span"> EndDate : <input type="date" id="end-date" [(ngModel)]="endDate"></span>
-            <button class="getbutton" (click)="weather()">Get Weather</button>
+            <span class="span"> StartDate : <input type="date" id="start-date" [(ngModel)]="startDate" (focus)="clearInput('startDate')"></span>
+            <span class="span"> EndDate : <input type="date" id="end-date" [(ngModel)]="endDate" (focus)="clearInput('endDate')"></span>
+            <button class="getbutton" (click)="weather()" (keydown.enter)="weather()">Get Weather</button>
         </div>
         <div class="weather-box"  *ngIf = "temperatureData">
             <h2>Weather Forecast</h2>

@@ -21,6 +21,8 @@ export class WeatherComponent {
   startDate: string=''; 
   endDate: string='';
   currentDate:Date = new Date();
+  isLoading = false;
+
 
   constructor(private sharedService:SharedService,private weatherService: WeatherService) {
     this.calculateWeekDates();
@@ -57,6 +59,7 @@ export class WeatherComponent {
     } else {
       this.showAlert();
     }
+    
   }
 
   BoxData() {
@@ -136,5 +139,12 @@ export class WeatherComponent {
         );
       }
     });
+  }
+  clearInput(inputField: 'startDate' | 'endDate') {
+    if (inputField === 'startDate') {
+      this.startDate = '';
+    } else if (inputField === 'endDate') {
+      this.endDate = '';
+    }
   }
 }

@@ -31,9 +31,12 @@ a {
     color: navy;
     padding: 10px;
 }
+
 a:hover {
-    background-color: rgba(0, 0, 128, 0.4);
+    text-decoration: none;
+    color: rgb(54, 109, 130);
 }
+
 .display-component {
     display: flex;
     height: 100%;
@@ -55,6 +58,7 @@ a:hover {
         height:0.1fr;
         width: 455px;
         background-color: rgba(135, 207, 235, 0.818);
+        
     }
     .route-link-align {
         display: flex;

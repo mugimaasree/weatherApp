@@ -1,7 +1,9 @@
 <div class="more-detail">
     <h1 class="more">Weather Details</h1>
     <div class="detail-box">
-        <div class="more-detail-box">
+        <!-- <div class="loading" *ngIf="isLoading">Loading...</div> -->
+
+        <div class="more-detail-box"> <!--  *ngIf="!isLoading"    -->
             <p>Max-Temperature : <span>{{temperatureData?.daily?.temperature_2m_max}} °C</span></p>
             <p>Min-Temperature : <span>{{temperatureData?.daily?.temperature_2m_min}} °C</span></p>
             <p>Precipitation : <span>{{temperatureData?.daily?.precipitation_sum}} mm </span></p>

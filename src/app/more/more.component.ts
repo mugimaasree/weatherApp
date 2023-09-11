@@ -10,6 +10,8 @@ export class MoreComponent implements OnInit {
   location:string = 'Thenkasi';
   temperatureData:any={};
   weatherData:any={};
+  isLoading = false;
+
 
   constructor(private sharedService: SharedService) { }
 
@@ -17,6 +19,14 @@ export class MoreComponent implements OnInit {
       this.sharedService.getTemperatureData().subscribe((data: any) => {
         this.temperatureData = data;
       });
+      this.isLoading = true;
+
+    // Simulate a delay (replace this with your actual API call)
+    setTimeout(() => {
+      // Once data is received and processed, set isLoading back to false
+      this.isLoading = false;
+    }, 500); // Simulated 2-second delay
+  
     }
     formatTime(timeString: string): string {
       if (!timeString) return '';
