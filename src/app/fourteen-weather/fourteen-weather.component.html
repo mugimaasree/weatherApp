@@ -11,7 +11,7 @@
         <div class="forecast-box"*ngFor="let day of Days; let i = index">
             <div class="date">{{ day.date }}</div>
                 <div class="temperature">
-                    <div class="tempa"> <span>☀️</span>{{ temperatureData?.hourly.temperature_2m[i] }}°C</div>
+                    <div class="tempa"> <span>☀️</span>{{ temperatureData?.daily?.temperature_2m_max[i] }}°C</div>
                     <div class="tempa"> <span>💧</span>{{ temperatureData?.hourly.relativehumidity_2m[i] }}%</div>
                     <div class="tempa"> <span>🌴</span>{{temperatureData?.hourly.windspeed_10m[i]}}km/h</div>
                 </div>

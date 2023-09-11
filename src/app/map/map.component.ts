@@ -57,7 +57,7 @@ export class MapComponent implements OnInit {
 
           this.weatherService.getTemperature(coordinates[0], coordinates[1], '2023-08-01', '2023-08-07')
           .subscribe((temperatureData: any) => {
-            const temperature = temperatureData.hourly.temperature_2m[0];
+            const temperature = temperatureData.daily.temperature_2m_max[0];
             const popupContent = `${location}<br>Temperature: ${temperature}&#176;C`;
             if (this.marker) {
               this.marker.bindPopup(popupContent).openPopup();
